@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 //            대입값이 string이면 변수타입도 자동으로 string으로 결정
             val inputContent = inputContentEdt.text.toString()
 
-            val input : String
+            Toast.makeText(this,inputContent,Toast.LENGTH_SHORT).show()
 
 //            val num1 = 10
         }
