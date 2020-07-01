@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "터치버튼을 눌렀습니다.", Toast.LENGTH_LONG).show()
 
             Log.d("메인화면","터치버튼눌렸다")
+
+            Log.e("메인화면","에러찍자")
         }
     }
 }
