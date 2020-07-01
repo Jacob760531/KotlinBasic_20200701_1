@@ -53,6 +53,8 @@ class MainActivity : AppCompatActivity() {
             when (inputAge) {
                 38 -> {Toast.makeText(this,"동갑",Toast.LENGTH_SHORT).show()}
                 20 -> {Toast.makeText(this,"20살",Toast.LENGTH_SHORT).show()}
+                in 10..19 -> {Toast.makeText(this,"10대",Toast.LENGTH_SHORT).show()}
+                10,19 -> {Toast.makeText(this,"10대",Toast.LENGTH_SHORT).show()}
                 else -> {Toast.makeText(this,"해당없음",Toast.LENGTH_SHORT).show()}
             }
         }
