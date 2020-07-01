@@ -23,5 +23,10 @@ class MainActivity : AppCompatActivity() {
 
             Log.e("메인화면","에러찍자")
         }
+
+        touchBtn2.setOnClickListener {
+            Toast.makeText(this,"두번째 버튼을 눌렸다",Toast.LENGTH_SHORT).show()
+            Log.d("메인화면","두번째 버튼을 눌렀다")
+        }
     }
 }
