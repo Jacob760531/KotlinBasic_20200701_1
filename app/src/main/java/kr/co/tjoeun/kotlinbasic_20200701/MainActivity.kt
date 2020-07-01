@@ -28,5 +28,16 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"두번째 버튼을 눌렸다",Toast.LENGTH_SHORT).show()
             Log.d("메인화면","두번째 버튼을 눌렀다")
         }
+
+//        토스트띄우기 버튼이 눌리면
+        showToastBtn.setOnClickListener {
+//            EditText에 입력된 내용을 받자. (string 으로 저장해두자)
+//            대입값이 string이면 변수타입도 자동으로 string으로 결정
+            val inputContent = inputContentEdt.text.toString()
+
+            val input : String
+
+//            val num1 = 10
+        }
     }
 }
