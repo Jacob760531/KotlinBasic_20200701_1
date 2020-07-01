@@ -39,5 +39,22 @@ class MainActivity : AppCompatActivity() {
 
 //            val num1 = 10
         }
+
+        ageBtn.setOnClickListener {
+
+//            입력한 나이를 int로 받자
+            val inputAge = ageEdt.text.toString().toInt()
+//            나이가 60이상이면 "어르신 입니다." 토스트
+            if (inputAge >= 60) {
+                Toast.makeText(this,"어르신입니다.",Toast.LENGTH_SHORT).show()
+            }
+
+//            입력된 나이값에 따라 다른처리 when
+            when (inputAge) {
+                38 -> {Toast.makeText(this,"동갑",Toast.LENGTH_SHORT).show()}
+                20 -> {Toast.makeText(this,"20살",Toast.LENGTH_SHORT).show()}
+                else -> {Toast.makeText(this,"해당없음",Toast.LENGTH_SHORT).show()}
+            }
+        }
     }
 }
