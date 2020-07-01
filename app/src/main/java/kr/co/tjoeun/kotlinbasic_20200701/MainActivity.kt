@@ -2,6 +2,7 @@ package kr.co.tjoeun.kotlinbasic_20200701
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -17,6 +18,8 @@ class MainActivity : AppCompatActivity() {
             //Toast를 이용해 사용자에게 안내 메세지.
 //            Toast.makeText(this, "터치버튼을 눌렀습니다.", Toast.LENGTH_SHORT).show()
             Toast.makeText(this, "터치버튼을 눌렀습니다.", Toast.LENGTH_LONG).show()
+
+            Log.d("메인화면","터치버튼눌렸다")
         }
     }
 }
